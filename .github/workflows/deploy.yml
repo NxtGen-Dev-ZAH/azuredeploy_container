@@ -35,8 +35,8 @@ jobs:
         run: |
           az containerapp create \
             --name mycontainerapp \
-            --resource-group myresourcegroup \
-            --environment mycontainerappenv \
+            --resource-group hello-world \
+            --environment hello-world \
             --image ${{ secrets.DOCKER_HUB_USERNAME }}/myapp:latest \
             --target-port 8000 \
             --ingress 'external' \
